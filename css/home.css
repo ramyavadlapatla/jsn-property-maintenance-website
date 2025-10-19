@@ -1,0 +1,288 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.header {
+    background-color: #F6E3CC;
+    /* light beige background */
+    color: #E08230;
+    /* orange text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-image {
+    width: 60px;
+    height: 60px;
+}
+
+.brand {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #E08230;
+}
+
+/* NAVIGATION */
+.navbar {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar a {
+    color: #E08230;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #B75B12;
+}
+
+.navbar .btn {
+    background-color: #E08230;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.navbar .btn:hover {
+    background-color: #C26D24;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 20px;
+    left: 0;
+}
+
+.dropdown-content a {
+    float: none;
+    color: rgb(241, 237, 237);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f8f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.Hover Drop Down dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.content {
+    margin: 20px width: 100%;
+    background: #fff;
+    background-position: top center;
+    background-image: url(img/content-bg.jpg);
+}
+
+.container {
+    padding: 100px;
+    width: 100%;
+    position: relative;
+    align-content: center;
+}
+
+.main-title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #004c99;
+    margin-bottom: 5px;
+}
+
+.sub-title {
+    font-size: 1.2em;
+    color: #007700;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.content {
+    width: 100%;
+    background: #fff;
+    background-position: top center;
+    background-image: url(img/content-bg.jpg);
+}
+
+.container {
+    padding: 100px;
+    width: 100%;
+    position: relative;
+    align-content: center;
+}
+
+.media-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.media-image {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+}
+
+.media-text {
+    flex: 1;
+    padding-top: 5px;
+}
+
+.swiper-horizontal {
+    touch-action: pan-y;
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+    box-sizing: content-box
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    z-index: 1;
+    align-content: center;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    display: block
+}
+
+.swiper-slide-invisible-blank {
+    visibility: hidden
+}
+
+.swiper-notification {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    opacity: 0;
+    z-index: -1000
+}
+
+element.style {}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px;
+    /* Offset padding for horizontal gutters */
+}
+
+.image-row {
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+
+.image-column img {
+    width: 80%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .image-column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.h2 {
+    font-size: 52px color#00773d;
+    font-width: 700;
+    letter-Spacing: -0.01em;
+    line-height: 1.1;
+    margin: 0 00 20px 0;
+    text-shadow: 0 1px 1px;
+    box-sizing: boarder-box;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+
+}
