@@ -8,7 +8,78 @@
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/interior.css" />
+    <style>
+        .main-title {
+            font-size: 2.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
 
+        .sub-title {
+            font-size: 1.4em;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .images-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .image-box {
+            text-align: center;
+        }
+
+        .image-box img {
+            width: 320px;
+            height: 220px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .caption {
+            margin-top: 8px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .bottom-text {
+            margin-top: 20px;
+            font-size: 1.05em;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .foot {
+            margin-top: 60px;
+            background: #f7f7f7;
+            padding: 30px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo-footer img {
+            width: 80px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .copy {
+            text-align: center;
+            padding: 15px;
+            background-color: #222;
+            color: #fff;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,7 +90,7 @@
         </div>
         <nav class="navbar">
             <div class="dropdown">
-                <a href="index1.html">Home</a>
+                <a href="../index.html">Home</a>
             </div>
             <div class="dropdown">
                 <a href="lawn1.html">Lawn Care</a>
@@ -54,64 +125,61 @@
                 </div>
             </div>
             <div class="dropdown">
-                <a href="aboutus.html">About Us</a>
-            </div>
-            <div class="dropdown">
                 <a href="#">Sign Up</a> / <a href="#">Login</a>
             </div>
         </nav>
     </header>
+    </header>
+
     <div style="padding-top: 80px; text-align: center; padding-bottom: 75px;">
         <h1 class="main-title">JSN Property Maintenance</h1>
         <h3 class="sub-title">Where Maintenance Meets Masterpiece</h3>
 
         <section class="images-row" aria-label="Indoor Maintenance">
-            <!-- Dusting -->
             <figure class="image-box">
                 <img src="../images/dusting.jpg" alt="Dusting Work">
                 <figcaption class="caption"><strong>Dusting</strong></figcaption>
-                <div class="bottom-text">
-                    <h2>Combustible Dusting</h2>
-                    <p>
-                        "JSN has the experience and knowledge to perform<br>
-                        quality air conveyance system cleaning at large<br>
-                        and small facilities throughout the Mid-Atlantic<br>
-                        Region. We specialize in healthcare, schools, and<br>
-                        large commercial and government institutions."
-                    </p>
-                </div>
             </figure>
 
-            <!-- Vacuuming -->
             <figure class="image-box">
                 <img src="../images/vacume.jpg" alt="Vacuuming Work">
                 <figcaption class="caption"><strong>Vacuuming</strong></figcaption>
-                <div class="vacuum-text">
-                    <h2>Vacuum set up for Residential</h2>
-                    <p>
-                        Our Services include Removing allergens and dust from carpets,<br>
-                        and ducts makes the environment healthier. Sweep and<br>
-                        mop floors regularly. For carpeted areas, consider<br>
-                        professional deep cleaning periodically.
-                    </p>
-                </div>
             </figure>
 
-            <!-- Detectors -->
             <figure class="image-box">
                 <img src="../images/detectors.jpg" alt="Detector Maintenance">
                 <figcaption class="caption"><strong>Detectors</strong></figcaption>
-                <div class="detector-text">
-                    <h2>Smoke Detector Service</h2>
-                    <p>
-                        Provides installation and inspection for smoke and<br>
-                        carbon monoxide detectors, with a guarantee and upfront<br>
-                        pricing.
-                    </p>
-                </div>
             </figure>
         </section>
+
+        <div class="bottom-text">
+            <h2>Dusting & Cleaning</h2>
+            <p>
+                "JSN Key services involve cleaning surfaces,</br>
+                floors, and ceilings, as well as specialized</br>
+                tasks like cleaning ventilation systems and </br>
+                post-construction cleanups.Dusting and sanitizing</br>
+                all surfaces, including countertops, fixtures,</br>
+                and high-touch points, using appropriate cleaners</br>
+                for different materials like glass, tile, and granite.
+            </p>
+
+            <h2>Vacuum set up for Residential</h2>
+            <p>
+                Our Services include Removing allergens and dust from carpets,</br>
+                and ducts makes the environment healthier.Sweep and </br>
+                mop floors regularly. For carpeted areas, consider </br>
+                professional deep cleaning periodically.
+            </p>
+
+            <h2>Smoke Detector Service</h2>
+            <p>
+                Provides installation and inspection for smoke and </br>
+                carbon monoxide detectors, with a guarantee and upfront</br>
+                pricing.
+        </div>
     </div>
+
     <div class="foot">
         <div class="footer-content">
             <!-- Logo Section -->
@@ -144,6 +212,7 @@
             </div>
         </div>
     </div>
+
     <div class="copy">
         &copy; 2025 JSN Property Maintenance. All rights reserved.
     </div>

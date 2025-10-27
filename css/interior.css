@@ -9,7 +9,53 @@ body {
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
-.main-title {
+..dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.95em;
+}
+
+.dropdown-content a:hover {
+    background-color: #e8efff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+----------------- .main-title {
     font-size: 2em;
     font-weight: bold;
     color: #004c99;
@@ -108,4 +154,19 @@ h2.card-title {
         height: auto;
     }
 
+}
+
+.top-text {
+    font-size: 1.075em;
+    line-height: 1em;
+    margin-bottom: 0;
+    color: sienna;
+    left-padding: 20px;
+
+}
+
+.bottom-text {
+    margin: 16px o;
+    font-size: .90em;
+    left-padding: 20px;
 }
