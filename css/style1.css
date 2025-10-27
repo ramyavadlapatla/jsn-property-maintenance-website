@@ -153,10 +153,6 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.content-wrapper {
-    box-sizing: border-box;
-    max-width: 1448x64px;
-}
 
 .h2 {
     box-sizing: border-box;
